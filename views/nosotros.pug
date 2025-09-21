@@ -1,1 +1,32 @@
-h1 Nosotros
+extends ./layout/index
+
+block contenido
+    main.container.mt-5
+        .row 
+            .col-md-5
+                img(src="img/nosotros.jpg", alt="imagen sobre nosotros", class="img-fluid")
+            .col-md-7
+                h1 #{pagina}
+                blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempor, lectus a scelerisque auctor, nunc mi viverra magna, sed faucibus nulla odio id sapien. Nunc scelerisque vestibulum urna id convallis. Mauris at sem quis ex pellentesque maximus eu sed massa. Nam sed felis in ipsum viverra fermentum in sed leo. Nunc pellentesque, ligula non iaculis ornare, eros odio sollicitudin dolor, vitae aliquet velit erat cursus diam. Mauris fringilla sollicitudin est nec consequat.
+
+                p Mauris aliquet dui sed massa tempor sodales. Nam ullamcorper rutrum justo. Nunc eget bibendum diam. Curabitur in porttitor nisl, ac efficitur dolor. Morbi at neque ut justo malesuada posuere vitae vitae lectus. Nam nec rutrum magna. In ornare lorem nec scelerisque tincidunt.
+
+                p Aenean blandit ornare tortor a semper. Suspendisse varius, eros ut porttitor euismod, orci sapien placerat justo, quis accumsan mi arcu quis velit. Phasellus tempus non enim nec feugiat. Nulla facilisi. In tempus dictum velit, ut finibus turpis condimentum sit amet. Curabitur quis nibh nec purus suscipit porta. Etiam vel dolor non lectus consectetur mattis vel quis metus.
+
+    .listado-iconos 
+        .container.mt-5.py-5.text-center 
+            .row 
+                .col-md-4
+                    img(src="img/icono_seguridad.svg", alt="")
+                    h2.mb-4 Seguridad 
+                    p In tempus dictum velit, ut finibus turpis condimentum sit amet. Curabitur quis nibh nec purus suscipit porta. Etiam vel dolor non lectus consectetur mattis vel quis metus nec.
+
+                .col-md-4
+                    img(src="img/icono_destinos.svg", alt="")
+                    h2.mb-4 Los mejores destinos 
+                    p In tempus dictum velit, ut finibus turpis condimentum sit amet. Curabitur quis nibh nec purus suscipit porta. Etiam vel dolor non lectus consectetur mattis vel quis metus nec.
+
+                .col-md-4
+                    img(src="img/icono_precios.svg", alt="")
+                    h2.mb-4 Los mejores precios
+                    p In tempus dictum velit, ut finibus turpis condimentum sit amet. Curabitur quis nibh nec purus suscipit porta. Etiam vel dolor non lectus consectetur mattis vel quis metus nec.
