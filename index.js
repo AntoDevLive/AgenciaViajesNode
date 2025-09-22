@@ -13,6 +13,9 @@ db.authenticate()
 //Definir puerto
 const port = process.env.PORT || 4000
 
+//Agregar body parser para leer los datos del formulario de testimoniales (agregar este use antes de agregar las rutas)
+app.use(express.urlencoded({ extended: true }));
+
 //Agregar router
 app.use('/', router);
 
@@ -21,7 +24,6 @@ app.set('view engine', 'pug');
 
 //Definir la carpeta publica
 app.use(express.static('public'));
-
 
 app.listen(port, () => {
     console.log('el servidor esta funcionando en el puerto: ' + port)
